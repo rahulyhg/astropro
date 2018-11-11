@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+    <defs>
+        <style>
+            .cls-1{fill:none;}
+            .cls-2{fill:#fff;}
+        </style>
+    </defs>
+    <title>Ресурс 1</title>
+    <g id="Слой_2" data-name="Слой 2">
+        <g id="exit">
+            <rect id="bounding_box" data-name="bounding box" class="cls-1" width="32" height="32" transform="translate(32 32) rotate(180)"/>
+            <g id="icon"><path class="cls-2" d="M12,7h4a1,1,0,0,1,0,2H12a2,2,0,0,0-2,2V21a2,2,0,0,0,2,2h4a1,1,0,0,1,0,2H12a4,4,0,0,1-4-4V11A4,4,0,0,1,12,7Z"/>
+                <path class="cls-2" d="M16,12a1,1,0,0,1,.71,1.71L14.41,16l2.29,2.29a1,1,0,0,1-1.41,1.41l-3-3a1,1,0,0,1,0-1.41l3-3A1,1,0,0,1,16,12Z"/>
+                <path class="cls-2" d="M15,15h9a1,1,0,0,1,0,2H15a1,1,0,0,1,0-2Z"/>
+            </g>
+        </g>
+    </g>
+</svg>

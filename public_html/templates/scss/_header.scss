@@ -1,0 +1,552 @@
+
+// Header
+
+.header {
+	z-index: 1010;
+	padding: 22px 0;
+	position: relative;
+	background: #01182c;
+
+	.container {
+		position: relative;
+	}
+
+	&__logo {
+		float: left;
+		font-size: 0;
+		line-height: 0;
+		width: 146px;
+		display: block;
+		margin-top: 3px;
+		position: relative;
+
+		&:before {
+			top:0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			content: '';
+			z-index: 100;
+			position: absolute;
+			display: block;
+		}
+	}
+
+	&__mobile {
+		float: right;
+		font-size: 0;
+		line-height: 0;
+		position: relative;
+		@include flexbox();
+
+		&_account {
+			float: left;
+			width: 36px;
+			height: 36px;
+			position: relative;
+			text-align: center;
+			margin-right: 14px;
+			display: inline-block;
+			border: 1px solid #fff;
+			padding: 2px 1px 0 1px;
+
+			span {
+				width: 100%;
+				height: 100%;
+				display: inline-block;
+				background: url("../img/icon_account.svg") 50% 50% no-repeat;
+				background-size: cover;
+			}
+
+
+			&.open {
+
+				&:after,
+				&:before {
+					top: 50%;
+					left: 50%;
+					z-index: 1;
+					width: 20px;
+					height: 2px;
+					content: '';
+					background: #fff;
+					position: absolute;
+					display: inline-block;
+					margin: -1px 0 0 -10px;
+				}
+
+				&:after {
+					@include rotate(45deg);
+				}
+
+				&:before {
+					@include rotate(-45deg);
+				}
+
+				span {
+					display: none;
+				}
+			}
+		}
+
+		&_nav {
+			float: left;
+			width: 36px;
+			height: 36px;
+			display: inline-block;
+			padding: 9px 9px 0 9px;
+			border: 1px solid #fff;
+
+			span {
+				width: 100%;
+				height: 2px;
+				background: #fff;
+				margin-bottom: 4px;
+				position: relative;
+				display: inline-block;
+			}
+
+			&.open {
+
+				span {
+					width: 20px;
+
+					&:nth-child(1) {
+						top: 6px;
+						left: -2px;
+						@include rotate(45deg);
+					}
+
+					&:nth-child(2) {
+						left: -2px;
+						@include rotate(-45deg);
+					}
+
+					&:nth-child(3) {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+
+	&__mobileNav {
+		left: 0;
+		right: 0;
+		top: 85px;
+		z-index: 1050;
+		display: none;
+		overflow-x: hidden;
+		overflow-y: auto;
+		height: calc(100vh - 85px);
+		position: fixed;
+		background: #023156;
+
+		&.open {
+			display: block;
+		}
+
+		ul {
+			margin: 0 auto;
+			padding: 10px 15px;
+			list-style: none;
+
+			li {
+				position: relative;
+
+				a {
+					color: #fff;
+					z-index: 10;
+					width: 100%;
+					font-size: 16px;
+					line-height: 32px;
+					position: relative;
+					display: inline-block;
+					text-decoration: none;
+					padding: 9px 0 9px 48px;
+
+					&:before {
+						top: 9px;
+						left: 8px;
+						content: '';
+						width: 32px;
+						height: 32px;
+						position: absolute;
+						display: inline-block;
+					}
+				}
+
+				&:nth-child(1) {
+
+					a {
+
+						&:before {
+							top: 11px;
+							background: url("../img/icon_account.svg") 0 0 no-repeat;
+							background-size: cover;
+						}
+					}
+				}
+
+				&:nth-child(2) {
+
+					a {
+
+						&:before {
+							background: url("../img/icon_messanges.svg") 0 0 no-repeat;
+							background-size: cover;
+						}
+					}
+				}
+
+				&:nth-child(3) {
+
+					a {
+
+						&:before {
+							background: url("../img/icon_report.svg") 0 0 no-repeat;
+							background-size: cover;
+						}
+					}
+				}
+
+				&:nth-child(4) {
+
+					a {
+
+						&:before {
+							background: url("../img/icon_news.svg") 0 0 no-repeat;
+							background-size: cover;
+						}
+					}
+				}
+
+				&:nth-child(5) {
+
+					a {
+
+						&:before {
+							background: url("../img/icon_info.svg") 0 0 no-repeat;
+							background-size: cover;
+						}
+					}
+				}
+
+				&:nth-child(6) {
+
+					a {
+
+						&:before {
+							background: url("../img/icon_login.svg") 0 0 no-repeat;
+							background-size: cover;
+						}
+					}
+				}
+
+				&.active {
+					background: #08416d;
+
+					&:after,
+					&:before {
+						top: 0;
+						bottom: 0;
+						z-index: 10;
+						content: '';
+						width: 200px;
+						position: absolute;
+						background: #08416d;
+					}
+
+					&:after {
+						left: -200px;
+					}
+
+					&:before {
+						right: -200px;
+					}
+				}
+			}
+		}
+	}
+
+	&__link {
+		float: right;
+		padding: 9px 0;
+		font-size: 0.875rem;
+		line-height: 1.25rem;
+		margin: 0 -15px;
+		display: none;
+		list-style: none;
+		@include clearfix();
+
+		li {
+			float: left;
+			padding: 0 15px;
+
+			a {
+				color: #fff;
+				font-size: 0.875rem;
+				line-height: 1.25rem;
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+	&__account {
+		float: left;
+		width: 200px;
+		height: 40px;
+		display: none;
+		font-size: 1rem;
+		line-height: 1.25rem;
+		position: relative;
+
+		&:before {
+			top: 17px;
+			right: 12px;
+			content: '';
+			display: block;
+			position: absolute;
+			border: 5px solid transparent;
+			border-top: 6px solid #fff;
+		}
+
+		&_button {
+			color: #fff;
+			width: 200px;
+			height: 40px;
+			cursor: pointer;
+			font-size: 1rem;
+			position: relative;
+			line-height: 1.25rem;
+			border: 1px solid #fff;
+			padding: 9px 30px 9px 55px;
+
+			&:before {
+				z-index: 5;
+				top: 1px;
+				left: 1px;
+				content: '';
+				width: 39px;
+				height: 37px;
+				position: absolute;
+				background: #001120;
+				border-right: 1px solid #fff;
+			}
+
+			&:after {
+				z-index: 10;
+				top: 4px;
+				left: 4px;
+				content: '';
+				width: 32px;
+				height: 32px;
+				display: block;
+				position: absolute;
+				background: url("../img/icon_account.svg") 50% 50% no-repeat;
+				background-size: cover;
+			}
+		}
+
+		&:hover {
+
+			.header__account_nav {
+				display: block;
+			}
+		}
+
+		&_nav {
+			right: 0;
+			top: 100%;
+			left: 40px;
+			margin: 0;
+			display: none;
+			padding: 10px 0;
+			list-style: none;
+			position: absolute;
+			background: #01182c;
+			border: 1px solid #fff;
+			border-top: none;
+
+			> li {
+
+				a {
+					color: #fff;
+					width: 100%;
+					font-size: 1rem;
+					font-weight: 300;
+					line-height: 20px;
+					padding: 7px 15px;
+					display: inline-block;
+					text-decoration: none;
+
+					&:hover {
+						color: #01182c;
+						background: #fff;
+					}
+				}
+			}
+		}
+	}
+
+
+	@media (min-width: $screen-lg-min) {
+		padding: 23px 0;
+
+		&__logo {
+			top: 0;
+			left: 50%;
+			width: 176px;
+			margin-left: -88px;
+			position: absolute;
+		}
+
+		&__mobile {
+			display: none;
+		}
+
+		&__mobileNav {
+			display: none;
+
+			&.open {
+				display: none;
+			}
+		}
+
+		&__link {
+			display: block;
+		}
+
+		&__account {
+			display: block;
+		}
+	}
+}
+
+.topnav {
+	left: 0;
+	right: 0;
+	top: 85px;
+	z-index: 999;
+
+	display: none;
+	overflow-x: hidden;
+	overflow-y: auto;
+	height: calc(100vh - 85px);
+	position: fixed;
+	background: #023156;
+
+	ul {
+		margin: 0 auto;
+		padding: 10px 0;
+		list-style: none;
+
+		li {
+			position: relative;
+
+			a {
+				color: #fff;
+				z-index: 10;
+				width: 100%;
+				font-size: 1rem;
+				line-height: 2rem;
+				position: relative;
+				white-space: nowrap;
+				display: inline-block;
+				text-decoration: none;
+				padding: 9px 0 9px 20px;
+
+				span {
+					color: #93d3ff;
+				}
+
+			}
+
+			&.active {
+				background: #08416d;
+
+				&:after,
+				&:before {
+					top: 0;
+					bottom: 0;
+					z-index: 10;
+					content: '';
+					width: 200px;
+					position: absolute;
+					background: #08416d;
+				}
+
+				&:after {
+					left: -200px;
+				}
+
+				&:before {
+					right: -200px;
+				}
+			}
+		}
+	}
+
+	&.open {
+		display: block;
+	}
+
+	@media (min-width: $screen-lg-min) {
+		top: auto;
+		left: auto;
+		right: auto;
+		height: auto;
+		display: block;
+		position: relative;
+
+		ul {
+			margin: 0;
+			padding: 0;
+			@include flexbox();
+
+			li {
+				width: 25%;
+
+				a {
+					font-size: 0.875rem;
+					text-align: center;
+					padding: 11px 5px;
+
+					&:hover {
+						background: #08416d;
+					}
+				}
+
+				&.active {
+					background: transparent;
+
+					a {
+						background: #08416d;
+					}
+
+					&:after,
+					&:before {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+
+	@media (min-width: $screen-xl-min) {
+
+		ul {
+
+			li {
+
+				a {
+					font-size: 1rem;
+				}
+			}
+		}
+	}
+}

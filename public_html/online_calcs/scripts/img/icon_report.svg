@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+    <defs>
+        <style>
+            .cls-1{fill:none;}
+            .cls-2{fill:#fff;}
+        </style>
+    </defs>
+    <title>icon report</title>
+    <g id="Слой_2" data-name="Слой 2">
+        <g id="drawer">
+            <rect id="bounding_box" data-name="bounding box" class="cls-1" width="32" height="32"/>
+            <g id="icon">
+                <path class="cls-2" d="M23,24H9.29A2.29,2.29,0,0,1,7,21.71V9.29A2.29,2.29,0,0,1,9.29,7H23a2.29,2.29,0,0,1,2.29,2.29V21.71A2.29,2.29,0,0,1,23,24ZM9.29,9A.29.29,0,0,0,9,9.29V21.71a.29.29,0,0,0,.29.29H23a.29.29,0,0,0,.29-.29V9.29A.29.29,0,0,0,23,9Z"/>
+                <path class="cls-2" d="M13,23a1,1,0,0,1-.93-.64H8a1,1,0,0,1,0-2h4.36A1.65,1.65,0,0,1,14,22,1,1,0,0,1,13,23Zm-.64-.64h0Z"/>
+                <path class="cls-2" d="M18,13H14a1,1,0,0,1,0-2h4a1,1,0,0,1,0,2Z"/>
+                <path class="cls-2" d="M19,16H13a1,1,0,0,1,0-2h6a1,1,0,0,1,0,2Z"/>
+                <path class="cls-2" d="M18,19H14a1,1,0,0,1,0-2h4a1,1,0,0,1,0,2Z"/>
+                <path class="cls-2" d="M19,23a1,1,0,0,1-1-1,1.65,1.65,0,0,1,1.64-1.64h4.64a1,1,0,0,1,0,2H19.93A1,1,0,0,1,19,23Z"/>
+            </g>
+        </g>
+    </g>
+</svg>

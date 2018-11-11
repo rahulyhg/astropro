@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+    <title>Astrology Calculations</title>
+    <meta name="description" content="Your description here">
+    <meta name="keywords" content="Your keywords here">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title><?php echo YOUR_URL; ?> login</title>
+    <meta name="description" content="<?php echo YOUR_URL; ?> Website">
+    <meta name="keywords" content="<?php echo YOUR_URL; ?> Website">
+
+    <link href="http://localhost/astro_new/public_html/online_calcs/styles.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="http://localhost/astro_new/public_html/online_calcs/scripts/geoloc.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKRtOkPBEPK9Ys5pXI5KPwyx8PWLTpGhM&libraries=places&callback=initAutocomplete" async defer></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="http://localhost/astro_new/public_html/online_calcs/js/bootstrap.min.js"></script>
+    <link href="http://localhost/astro_new/public_html/online_calcs/css/bootstrap.css" rel="stylesheet" />
+    <link href="http://localhost/astro_new/public_html/online_calcs/css/bootstrap-theme.css" rel="stylesheet" />
+
+    <link href='http://localhost/astro_new/public_html/online_calcs/general.css' rel='stylesheet' type='text/css' />
+</head>
+
+<div class="header">
+    <div class="wrap max-width">
+        <div class="signin-part" ng-mouseleave="closePopDelayed()" ng-mouseenter="reenterPopup()">
+            <div class="loggedin">
+
+                <a class="usericon" href="http://localhost/astro_new/public_html/online_calcs/logged_in_menu.php">
+                    <svg id="iconset-user-filled" viewBox="0 0 18 18" ng-click="clickShowMenu()" ng-mouseenter="showTooltip()" ng-mouseleave="hideTooltip()">
+                        <path d="M1 17l16-.013s-.195-2.395-.355-2.874c-.237-.71-.542-1.123-1.03-1.47-.2-.142-3.762-1.516-4.15-1.75-.39-.232-.685-.19-.45-.826.415-.74.773-1.067 1.316-2.46.66-1.686.367-3.855-.54-5.157C11.15 1.532 10.41 1 9 1c-1.527 0-2.152.532-2.79 1.45-.905 1.303-1.2 3.47-.542 5.158C6.21 9 6.696 9.61 7.013 10.06c.157.45-.08.674-.45.834-.37.16-3.982 1.607-4.18 1.748-.488.348-.793.76-1.03 1.47C1.193 14.596 1 17 1 17z"></path>
+                    </svg>
+                </a>
+
+
+
+            </div>
+        </div>
+        <div class="logo-wrapper"><a href="http://localhost/astro_new/public_html"><img src="http://localhost/astro_new/public_html/online_calcs/images/logo.png" border="0" alt="AstrologyLife" /></a></div>
+        <div class="social-part">
+            <div class="fb-like" data-href="https://www.astrologylife.com" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="false" data-colorscheme="light"></div>
+            <div class="menu-icon" ng-click="menuToggle()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    </div>
+</div>

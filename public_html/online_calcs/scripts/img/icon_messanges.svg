@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+    <defs>
+        <style>
+            .cls-1{fill:none;}
+            .cls-2{fill:#fff;}
+        </style>
+    </defs>
+    <title>icon message</title>
+    <g id="Слой_2" data-name="Слой 2">
+        <g id="comment">
+            <rect id="bounding_box" data-name="bounding box" class="cls-1" width="32" height="32"/><g id="icon">
+            <path class="cls-2" d="M12,26a1,1,0,0,1-1-1V22H10a4,4,0,0,1-4-4V10a4,4,0,0,1,4-4H22a4,4,0,0,1,4,4v8a4,4,0,0,1-4,4H19.27L12.5,25.87A1,1,0,0,1,12,26ZM10,8a2,2,0,0,0-2,2v8a2,2,0,0,0,2,2h2a1,1,0,0,1,1,1v2.28l5.5-3.15A1,1,0,0,1,19,20h3a2,2,0,0,0,2-2V10a2,2,0,0,0-2-2Z"/>
+            <circle class="cls-2" cx="13" cy="14" r="1"/>
+            <circle class="cls-2" cx="16" cy="14" r="1"/>
+            <circle class="cls-2" cx="19" cy="14" r="1"/>
+        </g>
+        </g>
+    </g>
+</svg>

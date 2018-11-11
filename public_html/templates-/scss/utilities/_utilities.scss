@@ -1,0 +1,28 @@
+.img-fluid {
+	height: auto;
+	display: block;
+	max-width: 100%;
+}
+
+.ico-svg {
+	position: relative;
+	display: inline-block;
+	width: auto;
+	height: 100%;
+	-webkit-transform: translate(0, 0);
+	transform: translate(0, 0);
+}
+
+.hide {
+	opacity: 0 !important;
+	display: none !important;
+	visibility: hidden !important;
+}
+
+.text-center {
+	text-align: center !important;
+}
+
+.text-right {
+	text-align: right !important;
+}

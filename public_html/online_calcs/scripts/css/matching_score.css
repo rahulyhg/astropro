@@ -1,0 +1,62 @@
+body
+{
+	margin:0 auto;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.main_wrapper
+{
+	margin:0 auto;
+	width:90%;
+}
+.clock
+{
+    background-image: url("../Xmeter.png");   /* this calls the graphic that is used - no graphic is default used by script */
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 240px auto;
+    float: left;
+    height: 246px;
+    margin-left: 10px;
+    width: 247px;
+}
+.clock_img
+{
+    left: -227px;
+    position: relative;
+    top: -5px;    
+    width:242px;
+}
+.time
+{
+	color:#009000;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:40px;
+	width:100%;
+	text-align:center;
+	margin-top:0px;
+	margin-bottom:0px;
+	line-height:41px;
+}
+.content
+{
+	float:left;
+	width:100%;
+}
+.content h2
+{
+	font-size:16px;
+	float:left;
+	width:100%;
+}
+.content h3
+{
+	font-size:18px;
+	color:#0000ff;
+	float:left;
+	width:100%;
+}
+.content p
+{
+	font-size:14px;
+	line-height:20px;
+}

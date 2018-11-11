@@ -1,0 +1,42 @@
+.form_control_sm {
+	margin: 0;
+	width: 100%;
+	color: #000;
+	outline: none;
+	font-size: 1rem;
+	background: #fff;
+	font-weight: 300;
+	line-height: 1.25rem;
+	display: inline-block;
+	padding: 0.875rem 1rem;
+	border: 1px solid #fff;
+	@include placeholder(#000);
+	@include border-radius(3px);
+
+	&::-ms-clear {
+		display: none;
+		width: 0;
+		height: 0;
+	}
+
+	&:hover {
+
+	}
+
+	&:focus {
+		color: #000;
+		background: #fff;
+		border-color: #fff;
+		@include placeholder(transparent);
+	}
+
+	&.error {
+		color: #da1308;
+		border-color: #da1308;
+	}
+}
+
+
+.form_group {
+	margin-bottom: 18px;
+}

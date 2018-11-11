@@ -1,0 +1,86 @@
+body {
+	margin: 0px;
+}
+#header img {
+	padding-top: 10px;
+	padding-left: 30px;
+	padding-bottom: 10px;
+}
+
+#content h3 {
+	background-color: #EEEEEE;
+	font-size: 11px;
+	font-weight: normal;
+	padding: 25px;
+}
+
+
+#active a:link, #active a:visited, #active a:hover
+{
+background-color: #FFFFFF;
+background-image: url(images/l1_over.gif);
+color: #333;
+}
+#header {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #codoff;
+}
+#footer {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #codoff;
+	font-family: tahoma, verdana, arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #999999;
+	padding-left: 30px;
+}
+#content {
+	font-family: tahoma, verdana, arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	line-height: 1.5em;
+	width: 850px;
+	margin-right: auto;
+	margin-left: 90px;
+	margin-top: 40px;
+}
+#content img {
+}
+
+#content h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #B90000;
+	font-size: 20px;
+	text-transform: none;
+}
+#content h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333333;
+	font-size: 16px;
+	text-transform: none;
+}
+#content a:link, #content a:visited 
+{
+	color: #996600;
+}
+#content a:hover, #content a:active 
+{
+	color: #B90000;
+}
+#footer a:link, #footer a:visited 
+{
+	color: #999999;
+}
+#footer a:hover, #footer a:active 
+{
+	color: #B90000;
+}
+.bluetext {color: #0000FF}
+
+.redtext {color: #FF0000}
+h4 
+{
+	color: #B90000;
+	font-size: 12px;
+}
